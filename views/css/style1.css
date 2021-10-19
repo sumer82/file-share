@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(191 188 228);
+}
+.container{
+width: 400px;
+height: 400px;
+box-sizing: border-box;
+border: 2px dashed blue;
+border-radius: 30px;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 20px;
+margin-top: 200px;
+box-shadow: 5px 10px 10px #171e2c;
+background-color: rgb(202, 231, 240);
+}
+.logo{
+width: 100px;
+font-size: 100px;
+}
+p span{
+   color:black;
+   font-weight: bold;
+}
+.download_btn{
+   width: 30%;
+   height: 30px;
+   padding: 10px;
+   background-color: darkgray;
+   border-radius: 10px;
+}
+.download_btn a{
+   text-decoration: none;
+   font-size:18px;
+   font-weight: bold;
+   color:darkred;
+}
+h3{
+   color:darkslategray;
+}
+h2{
+   color: firebrick;
+}
+#error{
+   font-size: 30px;
+   color: red;
+}

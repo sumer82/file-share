@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style1.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-cloud-download-alt"></i>
+        </div>
+        <% if(locals.error){%>
+        <h4 id="error"><%= locals.error%> </h4>
+        <%}
+        else{%>
+            <h2>Your file is ready to download</h2>
+            <p>Link will expire within 24 hr</p>
+            <div class="download">
+                <h4><%=fileName %></h4>
+                <h4> <%=parseInt(fileSize/1000) %> KB </h4>
+            </div>
+            <div class="download_btn">
+                <a href="<%=download %>">Download file</a>
+            </div>
+            <%
+          }%>
+    </div>
+</body>
+</html>
